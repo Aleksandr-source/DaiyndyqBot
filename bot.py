@@ -34,7 +34,7 @@ async def cmd_start(message: types.Message):
 
 async def get_telegram_file_url(file_id: str) -> str:
     file_info = await bot.get_file(file_id)
-    return f"https://api.telegram.org/file/bot{API_TOKEN}/{file_path=file_info.file_path}"
+    return f"https://api.telegram.org/file/bot{API_TOKEN}/{file_info.file_path}"
 
 @dp.message(lambda message: message.document is not None)
 async def handle_document(message: types.Message):
