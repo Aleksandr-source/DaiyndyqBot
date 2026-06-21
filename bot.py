@@ -7,7 +7,7 @@ from aiohttp import web
 
 # Получаем настройки из переменных окружения Render (чтобы не палить токен на GitHub)
 API_TOKEN = os.getenv("BOT_TOKEN")
-BASE_WEBAPP_URL = os.getenv("WEBAPP_URL", "https://daiyndyq-app.vercel.app")
+BASE_WEBAPP_URL = os.getenv("WEBAPP_URL", "https://daiyndyq-app-2026.web.app/")
 
 if not API_TOKEN:
     raise ValueError("ОШИБКА: Переменная окружения BOT_TOKEN не задана!")
